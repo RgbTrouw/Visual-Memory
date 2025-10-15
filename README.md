@@ -5,7 +5,7 @@ A GUI, C++ Visual Memory Analysis Program in Qt Creator.
 
 This program is aimed at storing and identifying images.
 
-The images are stored as small icons which serve as visual memory.
+The images are stored as small 32x32 icons which serve as visual memory.
 Some cross check functions are made between a subject picture and memory.
 
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
