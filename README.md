@@ -27,7 +27,7 @@ A GUI, C++ Visual Memory Analysis Program in Qt Creator.
 This program is aimed at identifying images. 
 A  set of images are stored as small 32x32 icons which serve as visual memory.
 
-The gui is under development, but there are some noticeble partial results. 
+The gui is under development, but it does display some noticeble, partial results. 
 
 
 Some cross check functions are made between a subject picture and memory after a high contrast conversion.
