@@ -24,13 +24,12 @@ Make sure to unzip them into the memory folder.
 
 A GUI, C++ Visual Memory Analysis Program in Qt Creator.
 
-This program is aimed at identifying images.
+This program is aimed at identifying images. 
+A  set of images are stored as small 32x32 icons which serve as visual memory.
 
-Current development status: 
+The gui is under development, but there are some noticeble partial results. 
 
-- Identify picture based on shape (b&w contrast);
 
-The images are stored as small 32x32 icons which serve as visual memory.
 Some cross check functions are made between a subject picture and memory after a high contrast conversion.
 
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
