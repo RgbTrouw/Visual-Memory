@@ -40,7 +40,7 @@ Ie.
 3. Subject file is converted to a high contrast black & white picture. (Heuristic shape comparison)
 4. Xor function is run against the memory icons. (Also at high contrast)
 5. Closest matches are displayed.  
-   *The weighted order is display is incomplete.
+   *The weighted order display is incomplete.
 
 More functions like identify objects (shapes) based on same color neighbor pixel syntax, plus overall color weights may be added next.
 
