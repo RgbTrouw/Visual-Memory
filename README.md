@@ -41,6 +41,6 @@ Ie.
 4. Xor comparison is run against the memory icons (also at high contrast).
 5. Closest matches are displayed.*
 
-More functions like identify objects (shapes) based on same color neighbor pixel syntax may be added next.
+More functions like identify objects (shapes) based on same color neighbor pixel syntax and overall color weights may be added next.
 
 ...
