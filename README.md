@@ -34,6 +34,12 @@ Some cross check functions are made between a subject picture and memory after a
 
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
 
+Ie.
+1. Subject file is loaded.
+2. Subject file is converted to a low res, 32x32 Image.
+3. Subject file is converted to a high contrast black & white picture.
+4. Xor comparison is run against the memory icons.
+5. Closest matches are displayed. ** In non order like fashion at the moment. 
 
 More functions like identify objects (shapes) based on same color neighbor pixel syntax may be added next.
 
