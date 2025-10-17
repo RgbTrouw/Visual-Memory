@@ -38,7 +38,7 @@ Ie.
 1. Subject file is loaded.
 2. Subject file is converted to a low res, 32x32 Image.
 3. Subject file is converted to a high contrast black & white picture.
-4. Xor comparison is run against the memory icons.
+4. Xor comparison is run against the memory icons (also at high contrast).
 5. Closest matches are displayed.*
 
 More functions like identify objects (shapes) based on same color neighbor pixel syntax may be added next.
