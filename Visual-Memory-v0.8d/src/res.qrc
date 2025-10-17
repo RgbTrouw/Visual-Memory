@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon.png</file>
+        <file>fingerprint.png</file>
+        <file>folder.png</file>
+    </qresource>
+</RCC>
