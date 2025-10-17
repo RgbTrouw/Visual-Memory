@@ -42,6 +42,15 @@ Ie.
 5. Closest matches are displayed.  
    *The weighted order display is incomplete.
 
+
 More functions like identify objects (shapes) based on same color neighbor pixel syntax, plus overall color weights may be added next.
+
+ >XoR Truth Table  
+ >  
+ >1 xor 1 = 0  
+ >0 xor 0 = 0  
+ >  
+ >1 xor 0 = 1  
+ >0 xor 1 = 1  
 
 ...
