@@ -35,6 +35,6 @@ Some cross check functions are made between a subject picture and memory after a
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
 
 
-More functions like identify objects (shapes) based on same color neighbor syntax may be added next.
+More functions like identify objects (shapes) based on same color neighbor pixel syntax may be added next.
 
 ...
