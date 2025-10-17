@@ -19,7 +19,7 @@ Notice: Memory Icons are sublicenced.
 Make sure to unzip them into the memory folder.
     
 
-# Visual-Memory v0.8d
+# Visual Memory v0.8d
 
 
 A GUI, C++ Visual Memory Analysis Program in Qt Creator.
