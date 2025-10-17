@@ -15,19 +15,27 @@
  >You should have received a copy of the GNU General Public License  
  along with this program. If not, see <https://www.gnu.org/licenses/>.
 
+Notice: Memory Icons are sublicenced. 
+Make sure to unzip them in the memory folder.
     
+
 # Visual-Memory v0.8d
 
 
 A GUI, C++ Visual Memory Analysis Program in Qt Creator.
 
-This program is aimed at storing and identifying images.
+This program is aimed at identifying images.
+
+Current development status: 
+
+- Identify picture based on shape (b&w contrast);
 
 The images are stored as small 32x32 icons which serve as visual memory.
-Some cross check functions are made between a subject picture and memory.
+Some cross check functions are made between a subject picture and memory after a high contrast conversion.
 
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
 
-The memory also contains sql database references to keywords and logical family categories, etc.
 
-More functions may be added in time.
+More functions like identify objects (shapes) based on same color neighbor syntax may be added next.
+
+...
