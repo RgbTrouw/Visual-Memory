@@ -24,7 +24,7 @@
 A GUI, C++ Visual Memory Analysis Program in Qt Creator.
 
 This program is aimed at identifying images. 
-A  set of images are stored as small 32x32 icons which serve as visual memory.
+A  set of images are stored as small 34x34 icons which serve as visual memory.
 
 The gui is under development, but it does display some partial results. 
 
@@ -39,7 +39,7 @@ Ie.
 2. Subject file is converted to a low res, 34x34 Image. (This simplifies the processing procedure)
 3. Subject file is converted to a high contrast black & white picture. (Heuristic shape comparison)
 4. Xor function is run against the memory icons. (Also at high contrast conversion)
-5. Closest matches are displayed.  
+5. Closest matches are displayed ordered by their score.  
 
 
 More functions like identify objects (shapes) based on same color neighbor pixel syntax, plus overall color weights may be added next.
