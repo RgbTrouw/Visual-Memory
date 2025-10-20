@@ -42,7 +42,7 @@ Ie.
 5. Closest matches are displayed, ordered by their scores.  
 
 
-More functions like identify objects (shapes) based on same color neighbor pixel syntax, plus overall color weights may be added next.
+More functions like identify containing objects (shapes) based on same color neighbor pixel syntax, plus overall color weights may be added next.
 
  >XoR Truth Table  
  >  
