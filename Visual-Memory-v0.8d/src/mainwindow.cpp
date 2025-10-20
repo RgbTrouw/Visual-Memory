@@ -10,6 +10,7 @@
 #include <QTimer>
 #include <QPushButton>
 #include <QThread>
+#include <match.h>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -34,12 +35,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     //qInfo() << memoryDrive.entryList();
 
-    for(int i =2; i< memoryDrive.entryList().size(); i++){
+    for(int i =0; i< memoryDrive.entryList({"*.png"}).size(); i++){
 
         QPushButton  *icon = new QPushButton();
 
-        icon->setIcon(QPixmap("memory/" + memoryDrive.entryList().at(i)));
-        icon->setToolTip(memoryDrive.entryList().at(i));
+        icon->setIcon(QPixmap("memory/" + memoryDrive.entryList({"*.png"}).at(i)));
+        icon->setToolTip(memoryDrive.entryList({"*.png"}).at(i));
         //icon->setText(memoryDrive.entryList().at(i));
         //icon->setGeometry(0,0,34,34);
         icon->setFixedHeight(34);
@@ -49,15 +50,15 @@ MainWindow::MainWindow(QWidget *parent)
         //icon->setScaledContents(true);
         hLayout->addWidget(icon);
 
-        connect(icon, &QPushButton::clicked, this, [=]{ selectMemory(memoryDrive.entryList().at(i)); });
+        connect(icon, &QPushButton::clicked, this, [=]{ selectMemory(memoryDrive.entryList({"*.png"}).at(i)); });
 
     }
 
     hLayout->addItem(horizontalSpacer);
 
-    ui->selectedMemory->setPixmap(QPixmap("memory/" + memoryDrive.entryList().at(2)));
+    ui->selectedMemory->setPixmap(QPixmap("memory/" + memoryDrive.entryList({"*.png"}).at(0)));
 
-    ui->iconsCounter->setText("Icons: " + QString::number(memoryDrive.entryList().count()));
+    ui->iconsCounter->setText("Icons: " + QString::number(memoryDrive.entryList({"*.png"}).count()));
     //qInfo() << memoryDrive.entryList().at(2);
 
     /// Menus
@@ -124,9 +125,9 @@ void MainWindow::convertToShapes(){
 
         //qInfo() << memoryDrive.entryList();
 
-        for(int i=2; i< memoryDrive.entryList().count(); i++){
+        for(int i=0; i< memoryDrive.entryList({"*.png"}).count(); i++){
 
-            QPixmap memoryPixmap("memory/" + memoryDrive.entryList().at(i));
+            QPixmap memoryPixmap("memory/" + memoryDrive.entryList({"*.png"}).at(i));
             QImage memoryImage(memoryPixmap.toImage());
             QImage *bufferImage= new QImage(34,34, QImage::Format_RGB888);
 
@@ -157,7 +158,7 @@ void MainWindow::convertToShapes(){
 
              }
 
-            bufferImage->save("memory/shapes/" + memoryDrive.entryList().at(i),"PNG");
+            bufferImage->save("memory/shapes/" + memoryDrive.entryList({"*.png"}).at(i),"PNG");
 
         }
 
@@ -248,9 +249,9 @@ void MainWindow::crossCheck(){
     QPixmap subjectShapePixmap = *ui->shapeIcon->pixmap();
     QImage subjectShapeImage(subjectShapePixmap.toImage());
 
-    for(int i=2; i< memoryDrive.entryList().size(); i++){
+    for(int i=0; i< memoryDrive.entryList({"*.png"}).size(); i++){
 
-        QPixmap crossShapePixmap = QPixmap("memory/shapes/" + memoryDrive.entryList().at(i));
+        QPixmap crossShapePixmap = QPixmap("memory/shapes/" + memoryDrive.entryList({"*.png"}).at(i));
         QImage crossShapeImage(crossShapePixmap.toImage());
 
         //qInfo() << "memory/shapes/" + memoryDrive.entryList().at(i);
@@ -311,34 +312,66 @@ void MainWindow::crossCheck(){
 
     QSpacerItem *horizontalSpacer3 = new QSpacerItem(1000,1, QSizePolicy::Expanding, QSizePolicy::Expanding);
 
-    int matches=0;
+    QList<match*> matchesList;
 
-    for(int i=0; i<score.count(); i++){
+    for(int i=0; i< memoryDrive.entryList({"*.png"}).size(); i++){
 
-       if(score.at(i) < 100){
+        matchesList.append(new match(memoryDrive.entryList({"*.png"}).at(i), score.at(i)));
+    }
 
-           QLabel *match = new QLabel();
-           match->setToolTip(memoryDrive.entryList().at(i+2));
 
-           //QVariant pcnt = ((1024 - score.at(i)) / 1024) * 100;
-           //qInfo() << pcnt;
-           //match->setToolTip(pcnt.String + " \%");
+    for(int redundancy = 0; redundancy < matchesList.count(); redundancy++){
 
-           match->setFixedHeight(34);
-           match->setFixedWidth(34);
-           match->setScaledContents(true);
-           match->setPixmap(QPixmap("memory/" + memoryDrive.entryList().at(i+2)));
+    for(int i=1; i<matchesList.count(); i++){
 
-           hLayout3->addWidget(match);
+        if(matchesList.at(i)->score < matchesList.at(i-1)->score){
 
-           //qInfo() << score.at(i) << " at " << i;
-           //qInfo() << memoryDrive.entryList().at(i+2);
-            matches +=1;
-       }
+            matchesList.swap(i, i-1);
+
+        }
+
+    }
+
+//       if(score.at(i) < score.at(i-1)){
+
+//           QLabel *match = new QLabel();
+//           match->setToolTip(memoryDrive.entryList({"*.png"}).at(i));
+
+//           //qInfo() << memoryDrive.entryList({"*.png"});
+//           //QVariant pcnt = ((1024 - score.at(i)) / 1024) * 100;
+//           //qInfo() << pcnt;
+//           //match->setToolTip(pcnt.String + " \%");
+
+//           match->setFixedHeight(34);
+//           match->setFixedWidth(34);
+//           match->setScaledContents(true);
+//           match->setPixmap(QPixmap("memory/" + memoryDrive.entryList({"*.png"}).at(i)));
+
+//           hLayout3->addWidget(match);
+
+//           //qInfo() << score.at(i) << " at " << i;
+//           //qInfo() << memoryDrive.entryList().at(i+2);
+//            matches +=1;
+//       }
 
 
     }
-   
+
+    for(int i=0; i< matchesList.count(); i++){
+
+        qInfo() << matchesList.at(i)->filePath + " : " + QString::number(matchesList.at(i)->score);
+
+        QLabel *matchLabel = new QLabel();
+        matchLabel->setToolTip("score: " + QString::number(matchesList.at(i)->score));
+
+        matchLabel->setFixedHeight(34);
+        matchLabel->setFixedWidth(34);
+        matchLabel->setScaledContents(true);
+        matchLabel->setPixmap(QPixmap("memory/" + matchesList.at(i)->filePath));
+
+         hLayout3->addWidget(matchLabel);
+    }
+
 
     hLayout3->addItem(horizontalSpacer3);
 
