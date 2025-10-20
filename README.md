@@ -15,8 +15,7 @@
  >You should have received a copy of the GNU General Public License  
  along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-Notice: Memory Icons are sublicenced. 
-Make sure to unzip them into the memory folder.
+
     
 
 # Visual Memory v0.8d
