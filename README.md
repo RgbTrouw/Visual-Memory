@@ -28,6 +28,7 @@ A  set of images are stored as small 32x32 icons which serve as visual memory.
 
 The gui is under development, but it does display some partial results. 
 
+  * To initialise memory: Edit-> Memory-> Convert to Shapes;  
 
 Some cross check functions are made between a subject picture and memory after a high contrast conversion.
 
