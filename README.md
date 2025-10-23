@@ -44,7 +44,7 @@ Ie.
 
 More functions like identify containing objects (shapes) based on same color neighbor pixel syntax, plus overall color weights may be added next.
 
-* An audio identification module is also under development. *
+** An audio identification module is also under development. *
 
  >XoR Truth Table  
  >  
