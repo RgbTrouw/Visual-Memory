@@ -44,6 +44,8 @@ Ie.
 
 More functions like identify containing objects (shapes) based on same color neighbor pixel syntax, plus overall color weights may be added next.
 
+< An audio identification algorithm is also under development. >
+
  >XoR Truth Table  
  >  
  >1 xor 1 = 0  
