@@ -1,6 +1,6 @@
 
  >Visual Memory v0.8d Application  
- Copyright (C) 2025  Radu G. Balaban G.  
+ Copyright (C) 2025-2026  Radu G. Balaban G.  
 
  >This program is free software: you can redistribute it and/or modify  
  it under the terms of the GNU General Public License as published by  
