@@ -26,7 +26,7 @@ A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.
 This program is aimed at identifying images. 
 A  set of pictures are stored as small 34x34 icons which serve as visual memory.
 
-The program is under development, but it does display some partial results. 
+The program is still under development, but it does display some partial results. 
 
   * To initialise memory: Edit-> Memory-> Convert to Shapes;  
 
