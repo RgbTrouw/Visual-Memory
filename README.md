@@ -32,7 +32,7 @@ The gui is under development, but it does display some partial results.
 
 Some cross check functions are made between a subject picture and memory after a high contrast conversion.
   
- For now, the algorighm only works with black background icons and does not distinguish colors. (serving for a heuristic shape comparison)  
+ For now, the algorighm only works with black background icons and does not distinguish colors. (serving for a simple, heuristic shape comparison)  
   
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
 
