@@ -41,7 +41,7 @@ Ie.
 2. Subject file is converted to a low res, 34x34 Image. (This simplifies the processing requirements)  
 3. Subject file is converted to a high contrast black & white picture. (black = black; !black = white;)  
 4. Xor function is run against the memory icons. (Also at high contrast conversion)
-5. Closest matches are displayed, ordered by their scores. (*note that the code will sort and display all memory icons and not only the first few)    
+5. Closest matches are displayed, ordered by their scores. (*note that the code will sort and display all memory icons and not only the first few best matches)    
 
 
 More functions like identify containing objects (shapes) based on same color neighbor pixel syntax, plus overall color weight scores may be added next.
