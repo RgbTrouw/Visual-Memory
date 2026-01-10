@@ -31,7 +31,9 @@ The gui is under development, but it does display some partial results.
   * To initialise memory: Edit-> Memory-> Convert to Shapes;  
 
 Some cross check functions are made between a subject picture and memory after a high contrast conversion.
-
+  
+ For now, the algorighm only works with black background icons and does not distinguish colors.  
+  
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
 
 Ie.
