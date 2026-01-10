@@ -38,7 +38,7 @@ An xor function with score weight serves as the starting point for the image ide
 
 Ie.
 1. Subject file is loaded.
-2. Subject file is converted to a low res, 34x34 Image. (This simplifies the processing)
+2. Subject file is converted to a low res, 34x34 Image. (This simplifies the processing requirements)  
 3. Subject file is converted to a high contrast black & white picture. 
 4. Xor function is run against the memory icons. (Also at high contrast conversion)
 5. Closest matches are displayed, ordered by their scores.  
