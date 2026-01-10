@@ -34,7 +34,7 @@ Some cross check functions are made between a subject picture and memory after a
   
  For now, the algorighm only works with black background icons and does not distinguish colors. (serving for a simple, heuristic shape comparison)  
   
-An xor function with score weight serves as the starting point for the image identification procedure.
+An xor function with score weight serves as the starting point for the image identification procedure, where 0 is the best match score.  
 
 Ie.
 1. Subject file is loaded.
