@@ -32,14 +32,14 @@ The gui is under development, but it does display some partial results.
 
 Some cross check functions are made between a subject picture and memory after a high contrast conversion.
   
- For now, the algorighm only works with black background icons and does not distinguish colors.  
+ For now, the algorighm only works with black background icons and does not distinguish colors. (serving for a heuristic shape comparison)  
   
 (a simple xor function with score weight serves as the starting point for the image identification procedure)
 
 Ie.
 1. Subject file is loaded.
 2. Subject file is converted to a low res, 34x34 Image. (This simplifies the processing)
-3. Subject file is converted to a high contrast black & white picture. (serving for a heuristic shape comparison)
+3. Subject file is converted to a high contrast black & white picture. 
 4. Xor function is run against the memory icons. (Also at high contrast conversion)
 5. Closest matches are displayed, ordered by their scores.  
 
