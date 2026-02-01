@@ -48,7 +48,12 @@ Ie.
 
 More functions like identify containing objects    based on same color neighbor pixel syntax, plus overall color weight scores may be added next.  
   
-Other additions also possible.  
+Other additions also possible. Meanwhile, it does serve as template model for pixel handling images in qt.  
+
+
+
+
+
 
 
 
