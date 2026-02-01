@@ -46,7 +46,8 @@ Ie.
 5. Closest matches are displayed, ordered by their scores. (*note that the code will sort and display all memory icons and not only the first few best matches)    
 
 
-More functions like identify containing objects    based on same color neighbor pixel syntax, plus overall color weight scores may be added next.
+More functions like identify containing objects    based on same color neighbor pixel syntax, plus overall color weight scores may be added next.  
+Other additions also possible.  
 
 
 
