@@ -47,6 +47,7 @@ Ie.
 
 
 More functions like identify containing objects    based on same color neighbor pixel syntax, plus overall color weight scores may be added next.  
+  
 Other additions also possible.  
 
 
@@ -58,5 +59,4 @@ Other additions also possible.
  >  
  >1 xor 0 = 1  
  >0 xor 1 = 1  
-
 ...
