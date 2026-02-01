@@ -21,7 +21,9 @@
 # Visual Memory v0.8d
 
 
-A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.
+A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.  
+
+![alt text](https://github.com/RgbTrouw/VisualMemory/blob/root/Visual-Memory.png)  
 
 This program is aimed at identifying images. 
 A  set of pictures are stored as small 34x34 icons which serve as visual memory.
