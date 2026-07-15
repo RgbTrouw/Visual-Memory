@@ -33,7 +33,7 @@ This new version simplifies the pic identification process by running a pixelwis
   
 A color tolerance integer variable is used within the process.  
   
-A QThread class is being employed (preventing the app from freezing while the scan is done).  
+QThread class is being employed (preventing the app from freezing while the scan is done).  
   
 All memories are checked but only the 120 best matches will be displayed.  
   
