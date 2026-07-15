@@ -29,7 +29,7 @@ This program is aimed at identifying images.
   
 A  set of pictures are stored as small 34x34 icons which serve as visual memory.  
   
-This new version simplifies the pic identification process by running an XoR alone.  
+This new version simplifies the pic identification process by running an XoR function alone.  
   
 A color tolerance integer variable is used within the process.  
   
