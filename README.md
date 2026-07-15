@@ -1,5 +1,5 @@
 
- >Visual Memory v0.8d Application  
+ >Visual Memory v0.9 Application  
  Copyright (C) 2025-2026  Radu G. Balaban G.  
 
  >This program is free software: you can redistribute it and/or modify  
@@ -18,45 +18,24 @@
 
     
 
-# Visual Memory v0.8d
+# Visual Memory v0.9 * New Version Release *
 
 
 A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.  
 
 ![alt text](https://github.com/RgbTrouw/VisualMemory/blob/root/Visual-Memory.png)  
 
-This program is aimed at identifying images. 
-A  set of pictures are stored as small 34x34 icons which serve as visual memory.
-
-The program is still under development, but it does display some partial results. 
-
-  * To initialise memory: Edit-> Memory-> Convert to Shapes;  
-
-Some cross check functions are made between a subject picture and memory after a high contrast conversion.
+This program is aimed at identifying images.  
   
- For now, the algorighm only works with black background icons and does not distinguish colors. (serving for a simple, heuristic shape comparison)  
+A  set of pictures are stored as small 34x34 icons which serve as visual memory.  
   
-An xor function with score weight serves as the starting point for the image identification procedure, where 0 is the best match score.  
-
-Ie.
-1. Subject file is loaded.
-2. Subject file is converted to a low res, 34x34 Image. (This simplifies the processing requirements)  
-3. Subject file is converted to a high contrast black & white picture. (black = black; !black = white;)  
-4. Xor function is run against the memory icons. (Also at high contrast conversion)
-5. Closest matches are displayed, ordered by their scores. (*note that the code will sort and display all memory icons and not only the first few best matches)    
-
-
-More functions like identify containing objects    based on same color neighbor pixel syntax, plus overall color weight scores may be added next.  
+This new version simplifies the pic identification process by runing an XoR alone.  
   
-Other additions also possible. Meanwhile, it does serve as template model for pixel handling images in qt.  
+A color tolerance integer variable is used within the process.  
+  
+A QThread class is being employed (prevents app from freezing while the scan is done).  
 
-
-
-
-
-
-
-
+  
  >XoR Truth Table  
  >  
  >1 xor 1 = 0  
