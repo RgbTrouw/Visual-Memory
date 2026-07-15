@@ -23,7 +23,7 @@
 
 A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.  
 
-![alt text](https://github.com/RgbTrouw/VisualMemory/blob/root/Visual-Memory.png)  
+![alt text](https://github.com/RgbTrouw/VisualMemory/blob/root/Screenshot.png)  
 
 This program is aimed at identifying images.  
   
