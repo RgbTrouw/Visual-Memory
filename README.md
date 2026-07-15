@@ -29,15 +29,15 @@ This program is aimed at identifying images.
   
 A  set of pictures are stored as small 34x34 icons which serve as visual memory.  
   
-This new version simplifies the pic identification process by runing an XoR alone.  
+This new version simplifies the pic identification process by running an XoR alone.  
   
 A color tolerance integer variable is used within the process.  
   
-A QThread class is being employed (prevents app from freezing while the scan is done).  
+A QThread class is being employed (preventing the app from freezing while the scan is done).  
   
-All memories are checked but only 120 best matches will be displayed.  
+All memories are checked but only the 120 best matches will be displayed.  
   
-Scores are weighted different from the last version (highest score = best match);   
+Scores are weighted differently from the last version (highest score = best match);   
   
  >XoR Truth Table  
  >  
