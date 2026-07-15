@@ -34,7 +34,10 @@ This new version simplifies the pic identification process by runing an XoR alon
 A color tolerance integer variable is used within the process.  
   
 A QThread class is being employed (prevents app from freezing while the scan is done).  
-
+  
+All memories are checked but only 120 best matches will be displayed.  
+  
+Scores are weighted different from the last version (highest score = best match);   
   
  >XoR Truth Table  
  >  
