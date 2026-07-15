@@ -29,7 +29,7 @@ This program is aimed at identifying images.
   
 A  set of pictures are stored as small 34x34 icons which serve as visual memory.  
   
-This new version simplifies the pic identification process by running a pixelwise XoR function alone (regardless of background color).  
+This new version simplifies the pic identification process by running a pixelwise comparison function alone (regardless of background color).  
   
 A color tolerance integer variable is used within the process.  
   
@@ -39,11 +39,4 @@ All memories are checked but only the 120 best matches will be displayed.
   
 Scores are weighted differently from the last version (highest score = best match);   
   
- >XoR Truth Table  
- >  
- >1 xor 1 = 0  
- >0 xor 0 = 0  
- >  
- >1 xor 0 = 1  
- >0 xor 1 = 1  
-...
+ 
