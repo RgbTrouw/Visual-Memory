@@ -18,7 +18,7 @@
 
     
 
-# Visual Memory *New Version Release*
+# Visual Memory - *New Version Release*
 
 
 A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.  
