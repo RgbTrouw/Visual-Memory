@@ -37,6 +37,6 @@ QThread class is being employed, preventing the app from freezing while the scan
   
 All memories are checked but only the 120 best matches will be displayed.  
   
-Scores are weighted differently from the last version (highest score = best match);   
+Scores (displayed as tooltip) are weighted differently from the last version (highest score = best match);   
   
  
