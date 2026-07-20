@@ -28,7 +28,7 @@
 
 ![alt text](https://github.com/RgbTrouw/VisualMemory/blob/root/Screenshot.png)  
 
-This program is aimed at identifying images.  
+This program is aimed at identifying (similar) images.  
   
 A  set of pictures are stored as small 34x34 icons which serve as visual memory.  
   
