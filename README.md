@@ -20,7 +20,8 @@
 
 # Visual Memory - *New Version Release*
 
-
+ - src & win bin x64 -
+     
 A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.  
 
 ![alt text](https://github.com/RgbTrouw/VisualMemory/blob/root/Screenshot.png)  
