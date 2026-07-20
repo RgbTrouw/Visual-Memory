@@ -30,11 +30,9 @@
 
 This program is aimed at identifying (similar) images.  
   
-A  set of pictures are stored as small 34x34 icons which serve as visual memory.  
+A  set of pictures are stored as small 34x34 icons which serve as visual memory. (Mysql Database storage is planned for a future release)  
   
 The new version simplifies the pic identification process by running a pixelwise color comparison function alone (regardless of background color or contrast).  
-  
-Mysql Database storage is planned for a future release.  
   
 A (+/-) color tolerance integer variable is used within the process.  
   
