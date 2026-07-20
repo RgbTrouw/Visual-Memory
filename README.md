@@ -23,8 +23,8 @@
  -- src & win binary x64 --  
    
  ** memory not included  
-     
-A GUI, C++, Qt5 Visual Memory Analysis (picture identification) Program designed with Qt Creator.  
+       
+ GUI, C++, Qt5 Visual Memory Analysis (picture identification) Program designed with Qt Creator.  
 
 ![alt text](https://github.com/RgbTrouw/VisualMemory/blob/root/Screenshot.png)  
 
