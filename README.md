@@ -22,7 +22,7 @@
 
  -- src & win binary x64 --  
    
- * memory not included  
+ ** memory not included  
      
 A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.  
 
