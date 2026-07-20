@@ -34,7 +34,7 @@ A  set of pictures are stored as small 34x34 icons which serve as visual memory.
   
 The new version simplifies the pic identification process by running a pixelwise color comparison function alone (regardless of background color or contrast).  
   
-A (+/-) color tolerance integer variable is used within the process.  (ie. rgb +- 12 )
+A (+/-) color tolerance integer variable is used within the process.  
   
 QThread class is being employed, preventing the app from freezing while the scan is done.  
   
