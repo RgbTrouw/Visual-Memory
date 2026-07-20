@@ -20,7 +20,7 @@
 
 # Visual Memory - *New Version Release*
 
- - src & win bin x64 -
+ -- src & win binary x64 --
      
 A GUI, C++, Qt5 Visual Memory Analysis Program designed with Qt Creator.  
 
