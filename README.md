@@ -22,7 +22,7 @@
 
  -- src & win binary x64 --  
    
- ** memory icons not included  
+ ** memory images not included  
        
  GUI, C++, Qt5 Visual Memory Analysis (picture identification) Program designed with Qt Creator.  
 
